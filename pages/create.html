@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Create</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <header><h1>CREAR NUEVO ITEM</h1></header>
+        <!-- Formulario -->
+        <form action="/create" method="post">
+            
+        <!-- Categoria -->
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+            </select>
+        <!-- Licencia -->
+            <label for="licencia">Licencia:</label>
+            <select id="licencia" name="licencia" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+            </select>
+
+            <br><br>
+            
+        <!-- Nombre del Producto  -->
+            <label for="nombredelProducto">Nombre Del Producto:</label>
+            <input type="text" id="nombredelProducto" name="nombredelProducto" required> 
+
+            <br><br>
+        <!-- Descripción Del Producto texto de Area -->
+            <textarea id="descripciónDelProdcuto" name="DescripciónDelProducto" rows="4" cols="50" placeholder="Descripción Del Producto" required></textarea><br><br>
+            
+
+        <!--SKU -->
+            <label for="sku">SKU:</label>
+            <input type="text" id="sku" name="sku" maxlength="12" size="8" required> 
+
+        <!-- Precio -->    
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio"  maxlength="10" size="8"  required>
+
+        <!-- Stock -->  
+            <label for="stock">Stock:</label>
+            <input type="text" id="stock" name="stock" maxlength="10"   size="4" required><br><br>
+            
+        <!-- Descuento -->
+            <label for="descuento">Descuento:</label>
+            <input type="text" id="descuento" name="descuento"  size="4" maxlength="5"   required>
+        
+        <!-- Cuotas select -->
+            <label for="cuotas">Cuotas:</label>
+            <select id="cuotas" name="cuotas" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="cuotas">Sin Cuotas</option>
+                <option value="cuotas">3 Cuotas sin interes</option>
+                <option value="cuotas">6 Cuotas sin interes</option>
+            </select> <br><br>
+
+        <!-- Imagenes boton de Elegir archivo --> 
+            <label for="imagenes">Imágenes:</label>
+            <input type="file" id="imagenes" name="imagenes" multiple  required> <br><br>
+            
+        <!-- Boton Agregar Producto -->
+            <button type="submit">Agregar Producto</button>
+        
+        <!-- Boton Limpiar todo el Formulario -->
+            <button type="reset">Limpiar</button>
+            
+        
+        </form>     
+            
+            
+            
+        <script src="" async defer></script>
+    </body>
+    <footer>
+        
+    </footer>
+
+    
+</html>
