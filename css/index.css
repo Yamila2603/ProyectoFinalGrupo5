@@ -133,6 +133,7 @@ header {
     display: none;
     position: absolute;
     background-color: var(--dark-bg-solid);
+    z-index: 3;
 }
 
 .with-submenu:hover .submenu{
