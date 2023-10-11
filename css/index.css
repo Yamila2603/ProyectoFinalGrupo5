@@ -40,6 +40,7 @@
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
@@ -61,7 +62,6 @@ html {
 
 a {
     text-decoration: none;
-    font-size: 2em;
     font-family: inherit;
     color: inherit;
 }
@@ -69,6 +69,7 @@ a {
 header, footer {
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
+    background-color: var(--dark-bg-solid);
 }
 
 ul, ol {
@@ -79,7 +80,72 @@ p {
     font-size: var(--font-medium); 
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     max-width: 1200px;
     margin: 0px auto;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.navbar__logo {
+    width: 372px;
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+}
+
+.with-submenu:hover .submenu{
+    display: block;
+}
+
+.submenu__link {    
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
 }
